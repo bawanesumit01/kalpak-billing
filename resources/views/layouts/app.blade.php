@@ -10,10 +10,10 @@
     <meta name="robots" content="noindex,nofollow" />
     <title>Kalpak Billing</title>
 
-    <link href="{{ asset('public/assets/css/custom.css') }}" rel="stylesheet" />
-    <link href="{{ asset('public/assets/css/style.min.css') }}" rel="stylesheet" />
-    <link rel="stylesheet" href="{{ asset('public/assets/css/jquery-jvectormap.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/assets/css/dataTables.bootstrap5.min.css') }}">
+    <link href="{{ asset('assets/css/custom.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/css/style.min.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ asset('/assets/css/jquery-jvectormap.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/css/dataTables.bootstrap5.min.css') }}">
     <!-- Custom CSS -->
     <style>
         /* Alert spacing */
@@ -121,35 +121,35 @@
     <!-- -------------------------------------------------------------- -->
     <!-- Required Js files -->
     <!-- -------------------------------------------------------------- -->
-    <script src="{{ asset('public/assets/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/jquery.min.js') }}"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="{{ asset('public/assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/bootstrap.bundle.min.js') }}"></script>
     <!-- Theme Required Js -->
-    <script src="{{ asset('public/assets/js/app.min.js') }}"></script>
-    <script src="{{ asset('public/assets/js/app.init.js') }}"></script>
-    <script src="{{ asset('public/assets/js/app-style-switcher.js') }}"></script>
+    <script src="{{ asset('/assets/js/app.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/app.init.js') }}"></script>
+    <script src="{{ asset('/assets/js/app-style-switcher.js') }}"></script>
     <!-- perfect scrollbar JavaScript -->
-    <script src="{{ asset('public/assets/js/perfect-scrollbar.jquery.js') }}"></script>
-    <script src="{{ asset('public/assets/js/jquery.sparkline.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/perfect-scrollbar.jquery.js') }}"></script>
+    <script src="{{ asset('/assets/js/jquery.sparkline.min.js') }}"></script>
     <!--Wave Effects -->
-    <script src="{{ asset('public/assets/js/waves.js') }}"></script>
+    <script src="{{ asset('/assets/js/waves.js') }}"></script>
     <!--Menu sidebar -->
-    <script src="{{ asset('public/assets/js/sidebarmenu.js') }}"></script>
+    <script src="{{ asset('/assets/js/sidebarmenu.js') }}"></script>
     <!--Custom JavaScript -->
-    <script src="{{ asset('public/assets/js/feather.min.js') }}"></script>
-    <script src="{{ asset('public/assets/js/custom.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/feather.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/custom.min.js') }}"></script>
     <!-- --------------------------------------------------------------- -->
     <!-- This page JavaScript -->
     <!-- --------------------------------------------------------------- -->
-    <script src="{{ asset('public/assets/js/excanvas.min.js') }}"></script>
-    <script src="{{ asset('public/assets/js/jquery.flot.js') }}"></script>
-    <script src="{{ asset('public/assets/js/jquery.flot.tooltip.min.js') }}"></script>
-    <script src="{{ asset('public/assets/js/jquery-jvectormap.min.js') }}"></script>
-    <script src="{{ asset('public/assets/js/jquery-jvectormap-world-mill-en.js') }}"></script>
-    <script src="{{ asset('public/assets/js/apexcharts.min.js') }}"></script>
-    <script src="{{ asset('public/assets/js/dashboard2.js') }}"></script>
-    <script src="{{ asset('public/assets/js/jquery.dataTables.min.js') }}"></script>
-    <script src="{{ asset('public/assets/js/datatable-basic.init.js') }}"></script>
+    <script src="{{ asset('/assets/js/excanvas.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/jquery.flot.js') }}"></script>
+    <script src="{{ asset('/assets/js/jquery.flot.tooltip.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/jquery-jvectormap.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/jquery-jvectormap-world-mill-en.js') }}"></script>
+    <script src="{{ asset('/assets/js/apexcharts.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/dashboard2.js') }}"></script>
+    <script src="{{ asset('/assets/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/datatable-basic.init.js') }}"></script>
     <script>
         setTimeout(function() {
             $(".alert").fadeOut("slow");
