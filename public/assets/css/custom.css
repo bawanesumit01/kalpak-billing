@@ -1,0 +1,129 @@
+.preloader {
+    position: fixed;
+    inset: 0;
+    background: #f0f4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+
+.preloader-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.invoice-loader {
+    position: relative;
+    width: 60px;
+    height: 72px;
+}
+
+/* Invoice draw-in animation */
+.invoice-icon {
+    animation: invoicePop 0.6s ease forwards;
+}
+
+@keyframes invoicePop {
+    0% {
+        transform: scale(0.7) translateY(10px);
+        opacity: 0;
+    }
+
+    60% {
+        transform: scale(1.05) translateY(-2px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Lines draw one by one */
+.line {
+    stroke-dasharray: 30;
+    stroke-dashoffset: 30;
+    animation: drawLine 0.4s ease forwards;
+}
+
+.line1 {
+    animation-delay: 0.5s;
+}
+
+.line2 {
+    animation-delay: 0.75s;
+}
+
+.line3 {
+    animation-delay: 1s;
+}
+
+.line4 {
+    animation-delay: 1.25s;
+    stroke: #1a3ccc;
+}
+
+@keyframes drawLine {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Rupee coin */
+.coin-wrap {
+    position: absolute;
+    bottom: -10px;
+    right: -18px;
+    animation: coinBounce 1s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+
+.coin {
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(135deg, #2962ff, #1a3ccc);
+    border-radius: 50%;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 8px rgba(41, 98, 255, 0.4);
+}
+
+@keyframes coinBounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Text dots animation */
+.preloader-text {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #2962ff;
+    letter-spacing: 0.5px;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
